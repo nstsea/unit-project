@@ -1,0 +1,138 @@
+.footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #1A1A1A;
+  color: #FFF;
+
+  /* Tablet */
+  @media (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.footer__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  margin-bottom: 50px;
+
+  /* Tablet */
+  @media (max-width: 1199px) {
+    margin-bottom: 40px;
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    flex-direction: column;
+    row-gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    row-gap: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.footer__nav {
+  display: flex;
+  column-gap: 50px;
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: center;
+  }
+}
+
+.footer__nav-item {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFF;
+
+  transition: 
+  color 0.3s ease-in;
+
+  &--active {
+    color: #00C470;
+  }
+
+  &:hover {
+    color: #00C470;
+    }
+}
+
+.footer__socials {
+  display: flex;
+  column-gap: 30px;
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    column-gap: 20px;
+  }
+}
+
+.footer__social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(196, 196, 196, 0.10);
+
+  transition: 
+  background-color 0.3s ease-in;
+
+  &--active {
+    background-color: #00C470;
+  }
+
+  &:hover {
+    background-color: #00C470;
+  }
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.30);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+
+  span {
+    font-weight: 700;
+  }
+
+  & p:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5; 
+    padding: 0 50px;
+  }
+}

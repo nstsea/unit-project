@@ -1,0 +1,67 @@
+.section-cta {
+  position: relative;
+  padding-top: 83px;
+  padding-bottom: 84px;
+
+  /* Desktop FHD */
+  @include bgImage ("./../img/bg/fhd/cta-bg.jpg");
+
+  &::before {
+    @extend %overlay;
+  }
+
+  /* Desktop MD */
+  @media (max-width: 1600px) {
+    @include bgImage ("./../img/bg/cta-bg.jpg");
+  }
+  
+  /* Tablet */
+  @media (max-width: 1199px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include bgImage ("./../img/bg/resize-bg-cta/tablet-cta.jpg");
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    @include bgImage ("./../img/bg/resize-bg-cta/mobile-cta.jpg");
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    @include bgImage ("./../img/bg/resize-bg-cta/mobile-xs-cta.jpg");
+  }
+}
+
+.section-cta__content {
+  position: relative;
+  text-align: center;
+  z-index: 9;
+  color: #FFF;
+}
+
+.section-cta__title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1; 
+  margin-bottom: 40px;
+
+  span {
+    font-weight: 700; 
+    text-transform: uppercase;
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}
+

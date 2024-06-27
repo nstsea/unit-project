@@ -1,0 +1,40 @@
+.input {
+  display: block;
+  height: 60px;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: none;
+
+  line-height: 60px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: 
+  background-color 0.3s ease-in, 
+  color 0.3s ease-in;
+
+  &::placeholder {
+    color: #FFF;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
